@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 40%;
+    box-shadow: 0 19px 38px rgb(0, 0, 0, 0.3);
+}
+.form-1 h1{
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+input[type="email"],
+input[type="password"]{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    background: none;
+    margin: 0.9rem 2rem;
+    font-size: 1rem;
+    width: 87.5%
+}
+label{
+    margin: 0 2rem;
+    display: flex;
+}
+span{
+    margin: 0 2rem;
+    color: blue;
+    cursor: pointer;
+}
+button{
+    border: none;
+    margin: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: #fff;
+    background: linear-gradient(to right, rgb(109, 205, 250), lightblue, rgb(133, 133, 255), #3580f1)
+}
+button:hover{
+    background: linear-gradient(to left, rgb(109, 205, 250), lightblue, rgb(133, 133, 255), #3f86ed)
+}
+p{
+    text-align: center;
+    font-weight: bolder;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+}
+.icon a{
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0.2rem;
+}
+.icon a img{
+    width: 30px;
+    margin: 5px;   
+}
+
+@media(max-width:501px){
+    html{
+        font-size: 15px;
+    }
+    .container .form-1{
+        width: 300px;
+    }
+}
+@media(min-width: 501px) and (max-width: 768px){
+    html{
+        font-size: 14px;
+    }
+    .container .form-1{
+        width: 450px;
+    }
+}
+
